@@ -1,31 +1,30 @@
-import{Navbar,Nav} from 'react-bootstrap';
-import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
-export default function Menu(){
-return(
-        <Navbar className="navbar-light"bg="danger"expand="lg"fixed="top">
+import {Navbar,Nav} from 'react-bootstrap';
+export default function Menu() {
+return (
+        <Navbar className="navbar-dark"bg="danger"expand="lg"fixed="top">
             <Navbar.Brand>
                 Full Stack Eletro
             </Navbar.Brand>
-            <Navbar.Toggle aria aria-controls="item-menu"/>
-            <Navbar.Collapse id="item-menu">
-                <Nav >
+            <Navbar.Toggle aria-controls="item-Menu"/>
+            <Navbar.Collapse id="item-Menu">
+                <Nav className="ml-auto m-3">
                 <Nav.Item>
-                <Nav.link href="/"to="/">Página Inicial</Nav.link>
+                <Nav.Link href="/"to ="/"> Página Inicial</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                <Nav.link  href="/produtos"to="/produtos">Produtos</Nav.link>
+                <Nav.Link href="/produtos"to ="/produtos"> Produtos</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                <Nav.link  href="/contatos"to="/contatos">Contatos</Nav.link>
+                <Nav.Link  href="/contatos"to ="/contatos"> Contatos</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                <Nav.link  href="/"to="/"></Nav.link>
+                <Nav.Link href="/pedidos"to ="/pedidos"> Pedidos</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                <Nav.link  href="/"to="/"></Nav.link>
+                <Nav.Link href="/lojas"to ="/lojas"> Nossas lojas</Nav.Link>
                 </Nav.Item>
                 </Nav>
-            </Navbar.Collapse>
+                </Navbar.Collapse>
         </Navbar>
     )
 };
