@@ -10,7 +10,7 @@ const Contatos = () =>{
     const [msg , setMsg] = useState(false);
 
     useEffect(async () => {
-        const url = "http://localhost/proyectoFullStack/FullStackEletro-Ract/Backend/indexCom.php";
+        const url = "http://localhost/full_stack_eletro/Back-End/Backend/Api.php";
         const response = await fetch(url);
         setComentarios(await response.json());
     }, [render])
@@ -21,7 +21,7 @@ const Contatos = () =>{
         event.preventDefault();
         let formData = new FormData(event.target);
 
-        const url = "http://http://localhost/full-stack-eletro";
+        const url = "http://localhost/full_stack_eletro/Back-End/Backend/Api.php";
 
         fetch(url, {
             method: "POST",
