@@ -1,5 +1,5 @@
-import Email from '../Img/img/email2.jpg';
-import Whatsapp from '../Img/img/whatsapp.jpg';
+import Email from '../imagens/email2.jpg';
+import Whatsapp from '../imagens/whatsapp.jpg';
 import './Contato/estilo.css';
 import React, {useState, useEffect} from 'react';
 
